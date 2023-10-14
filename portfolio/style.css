@@ -606,6 +606,7 @@ footer {
 
   .cert-body {
     margin: 10px 0 0 0; /* Adjust the margin for certificates */
+	  font-size: 15px;
   }
 
   .cert-body p {
