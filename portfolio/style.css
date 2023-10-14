@@ -552,7 +552,7 @@ footer {
   }
 
   .hello, .skil {
-    font-size: 40px; /* Increase font size */
+    font-size: 25px; /* Increase font size */
   }
 
   .detailed {
@@ -584,7 +584,7 @@ footer {
 
   .contact-info {
     align-items: center; /* Center align the contact info */
-    margin: 20px 0; /* Add spacing between phone and email */
+    margin: 10px 0; /* Add spacing between phone and email */
   }
 
   #profile-picture {
@@ -613,22 +613,3 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .home {
-    background-size: contain; /* Change to 'contain' for smaller screens */
-  }
-
-  .skills {
-    background-size: contain; /* Change to 'contain' for smaller screens */
-  }
-
-  .certificates {
-    background-size: contain; /* Change to 'contain' for smaller screens */
-  }
-}
-
-
-  /* Add specific styles for each section if needed */
-}
-
-/* Add more media queries for tablets and larger screens as required */
