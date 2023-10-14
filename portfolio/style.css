@@ -532,3 +532,67 @@ footer {
   font-size: 20px;
   font-weight: bolder;
 }
+
+/* Mobile phones (portrait) */
+@media (max-width: 480px) {
+  .name {
+    font-size: 2rem;
+  }
+
+  .hello {
+    font-size: 1.6rem;
+  }
+
+  .detailed {
+    font-size: 1.2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contact-links {
+    margin: 0;
+  }
+
+  .contact-details {
+    font-size: 1rem;
+  }
+
+  .buttons button {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skills-container {
+    margin: 0 auto;
+  }
+
+  .skill-box .title {
+    font-size: 1.2rem;
+  }
+
+  .skill-per .tooltip {
+    font-size: 0.8rem;
+  }
+
+  .cert-title {
+    font-size: 1.8rem;
+  }
+
+  .cert-body li {
+    font-size: 1rem;
+  }
+
+  .cert-body p {
+    font-size: 0.8rem;
+  }
+}
+
+
