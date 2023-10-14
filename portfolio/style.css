@@ -85,8 +85,10 @@ header{
 	background-image: url("home.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
-
+position:relative;
 }
+.home .name{
+	z-index: 1;}
 #about{
   height: 100vh;
   background-color: #9d0c0c ;
