@@ -613,6 +613,21 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .home {
+    background-size: contain; /* Change to 'contain' for smaller screens */
+  }
+
+  .skills {
+    background-size: contain; /* Change to 'contain' for smaller screens */
+  }
+
+  .certificates {
+    background-size: contain; /* Change to 'contain' for smaller screens */
+  }
+}
+
+
   /* Add specific styles for each section if needed */
 }
 
