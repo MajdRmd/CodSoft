@@ -1,0 +1,534 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* box-sizing and font sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+ html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 4.2rem;
+  }
+
+html,body{
+	margin: 0;
+	padding: 0;
+
+}
+header{
+	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+
+	height: 10vh;
+	background-color: #9d0c0c;
+  line-height: 10vh;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+}
+
+.name{
+	color: ghostwhite;
+	margin-left: 15px;
+}
+.cert{
+  margin-right: 10px;
+}
+.home{
+	height: 90vh;
+	background-image: url("home.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+#about{
+  height: 100vh;
+  background-color: #9d0c0c ;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+#skills{
+  width: 1000px; /* Set the desired width */
+  height: 180px; /* Set the desired height */
+  display: block; /* Make sure it's a block-level element */
+  margin: 120px auto; /* Center the photo horizontally with some spacing */
+  position: absolute;
+  
+  left: 50%; /* Position it horizontally at 50% from the left */
+  transform: translate(-50%, -50%); /* Center it precisely */
+   background: transparent;
+  z-index: 1; /* Place it above other content */
+  
+  opacity: 90%;
+ 
+
+}
+
+
+
+   .projects-section {
+      text-align: center;
+      padding: 10rem 2rem;
+      background-color: #9d0c0c ;
+      font-family: 'Oswald', sans-serif;
+      
+
+    }
+    
+    .projects-section-header {
+      max-width: 640px;
+      margin: 0 auto 6rem auto;
+
+      color: whitesmoke;
+
+    }
+    
+    @media (max-width: 28.75em) {
+      .projects-section-header {
+        font-size: 4rem;
+      }
+    }
+    
+    /* "Automagic" image grid using no media queries */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 5rem;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+
+
+    
+    }
+  
+  @media (max-width: 30.625em) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .project {
+    background: darkgrey;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+     display: flex;
+  flex-direction: column;
+  height: 100%; /* Set a fixed height for each project */
+  text-align: center; /* Center the text within the project container */
+  overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .code {
+    color: whitesmoke;
+    transition: color 1s ease-out;
+    visibility: hidden;
+  }
+  
+  .project:hover .code {
+    color: black;
+    visibility: visible;
+  }
+  
+  .project-image {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1.5rem 0.5rem;
+    color: #9d0c0c;
+
+  }
+
+
+
+.skills-container{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+
+/* Style the container for the profile picture and text content */
+.about-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 20px;
+   padding: 20px; /* Adjust as needed to create space between the picture and text */
+}
+.contact-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   color: #ffffff;
+   margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.contact-info p {
+   font-size: 20px; /* Adjust the font size as needed */
+   margin: 10px 0; /* Add spacing between phone and email */
+
+}
+
+
+.profile-container {
+   width: 40%; /* Adjust the width as needed */
+ display: flex;
+   flex-direction: column;
+   align-items: center; /* Center horizontally */
+}
+
+#profile-picture {
+   border-radius: 50%;
+   width: 100%; /* Make the picture fill the container */
+   height: 100%;
+   max-width: 250px; /* Set the maximum width as needed */
+   max-height: 250px;
+   object-fit: cover;
+  
+}
+
+.bio {
+   width: 100%; /* Adjust the width as needed */
+   margin-top: 30px;
+}
+
+.aboutme {
+   font-weight: bold;
+
+
+}
+
+.bio li {
+
+   font-size: 30px;
+   margin: 20px 0; /* Add spacing between paragraphs */
+}
+.divider{
+   border: 1px solid;
+   margin: 5px 0; /* Add spacing above and below the line */
+}
+
+
+.intro,.title{
+	max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%; /* Ensure the section takes up the full height of its container */
+}
+
+.hello,.skil{
+	margin-top: 50px;
+   font-family: 'Oswald', sans-serif;
+	    font-weight: bold;
+	font-size: 70px;
+
+}
+.detailed{
+	margin-top: 30px;
+	margin-left: 100px;
+
+	color: dimgray;
+	font-size: 27px;
+	    font-family: 'Oswald', sans-serif;
+	    font-weight: bold;
+}
+ .contact-links {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 45%;
+margin-top: -170px;
+
+    flex-wrap: wrap;
+    margin-left: 50px;
+    font-family: 'Oswald', sans-serif;
+
+  }
+  
+  .contact-details {
+color: #9d0c0c;
+font-weight: bold;
+    font-size: 22px !important;
+    transition: transform 0.3s ease-out;
+  }
+   .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+  .buttons{
+  	max-width:50%;
+  	display: flex;
+ justify-content: center;
+
+  	  }
+
+  	  .buttons button{
+  	  	margin: 10px;
+  	  	background-color: #9d0c0c;
+  	  	font-family:'Oswald', sans-serif;
+  	  	font-size: 20px;
+  	  font-weight: bold;
+  	  }
+  	
+ .skills{
+ 
+  height: 100vh;
+  background-image: url("skill.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ }
+
+
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+.skills{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #9d0c0c;
+    margin: 0 15px;
+   left: 25%;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 26px;
+    font-weight: 600;
+
+    color: whitesmoke;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #EEEEEE;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.css{
+    width: 80%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 80%;
+    animation-delay: 0.2s;
+}
+.skill-per.php{
+    width: 70%;
+    animation-delay: 0.3s;
+}
+.skill-per.reactjs{
+    width: 40%;
+    animation-delay: 0.4s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+
+.certificates{
+  height: 100vh;
+  background-image: url("certificates.jpeg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+.cert-title{
+  position:relative;
+  top:40%;
+margin-left: 50px;
+  font-family: 'Oswald', sans-serif;
+      font-weight: bold;
+  font-size: 50px;
+  color: black ;
+}
+
+.cert-body{
+  position: relative;
+  top: 40%;
+margin: 20px 0 0 80px;
+  font-family: 'Oswald', sans-serif;
+      font-weight: bold;
+  font-size: 30px;
+}
+.cert-body li {
+ color:#9d0c0c;
+}
+.web-cert,.js-cert {
+  margin: 40px 0;
+}
+.cert-body p{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 100;
+ 
+}
+.cert-body ul li a{
+  color:#9d0c0c;
+
+}
+footer {
+  background-color: #9d0c0c;
+  height: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot {
+  text-align: center;
+}
+
+.footer-details {
+  color: black;
+  font-weight: bold;
+  font-size: 24px !important;
+  transition: transform 0.3s ease-out;
+}
+
+.footer-details:hover {
+  transform: translateY(8px);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-links a{
+  margin-top: 10px;
+}
+
+.download button {
+  margin: 10px;
+  color: #9d0c0c;
+  background-color: whitesmoke;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
