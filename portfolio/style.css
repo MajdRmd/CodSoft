@@ -538,7 +538,9 @@ footer {
   html {
     font-size: 50%; /* Adjust the base font size for smaller screens */
   }
-
+.certificates{
+	 background-size: 100%;}
+	
   header {
     font-size: 20px; /* Decrease the font size in the header */
   }
@@ -612,5 +614,8 @@ footer {
   .cert-body p {
     margin: 10px 0; /* Add spacing between certificate paragraphs */
   }
+	.home,.skills{
+		 background-size: 100%;}
+	
 }
 
