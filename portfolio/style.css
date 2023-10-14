@@ -533,66 +533,30 @@ footer {
   font-weight: bolder;
 }
 
-/* Mobile phones (portrait) */
-@media (max-width: 480px) {
+/* Apply these styles for mobile phones */
+@media (max-width: 767px) {
+  .home,
+  #about,
+  .skills,
+  #projects,
+  #certificates,
+  .foot {
+    padding: 20px;
+  }
+
   .name {
-    font-size: 2rem;
+    font-size: 24px;
   }
 
   .hello {
-    font-size: 1.6rem;
+    font-size: 20px;
   }
 
   .detailed {
-    font-size: 1.2rem;
-    margin-left: 0;
-    text-align: center;
+    font-size: 16px;
   }
 
-  .contact-links {
-    margin: 0;
-  }
-
-  .contact-details {
-    font-size: 1rem;
-  }
-
-  .buttons button {
-    font-size: 1rem;
-  }
-
-  .project-title {
-    font-size: 1.4rem;
-  }
-
-  .project-image {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .skills-container {
-    margin: 0 auto;
-  }
-
-  .skill-box .title {
-    font-size: 1.2rem;
-  }
-
-  .skill-per .tooltip {
-    font-size: 0.8rem;
-  }
-
-  .cert-title {
-    font-size: 1.8rem;
-  }
-
-  .cert-body li {
-    font-size: 1rem;
-  }
-
-  .cert-body p {
-    font-size: 0.8rem;
-  }
+  /* Add specific styles for each section if needed */
 }
 
-
+/* Add more media queries for tablets and larger screens as required */
