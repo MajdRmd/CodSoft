@@ -534,7 +534,7 @@ footer {
 }
 
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   html {
     font-size: 50%; /* Adjust the base font size for smaller screens */
   }
@@ -613,7 +613,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .home {
     background-size: contain; /* Change to 'contain' for smaller screens */
   }
