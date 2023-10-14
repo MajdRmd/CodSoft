@@ -533,28 +533,81 @@ footer {
   font-weight: bolder;
 }
 
-/* Apply these styles for mobile phones */
-@media (max-width: 767px) {
-  .home,
-  #about,
-  .skills,
-  #projects,
-  #certificates,
-  .foot {
-    padding: 20px;
+
+@media (max-width: 375px) {
+  html {
+    font-size: 50%; /* Adjust the base font size for smaller screens */
   }
 
-  .name {
-    font-size: 24px;
+  header {
+    font-size: 20px; /* Decrease the font size in the header */
   }
 
-  .hello {
-    font-size: 20px;
+  .intro, .title {
+    text-align: center; /* Center the text */
+  }
+
+  .hello, .skil {
+    font-size: 40px; /* Increase font size */
   }
 
   .detailed {
-    font-size: 16px;
+    margin-left: 0; /* Reset the margin */
   }
+
+  .contact-links {
+    max-width: 100%; /* Make the links take the full width */
+    margin-left: 0; /* Remove margin on the left */
+    margin-top: 10px; /* Add some space at the top */
+  }
+
+  .contact-details {
+    font-size: 18px; /* Decrease the font size of contact links */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack the buttons vertically */
+    text-align: center; /* Center-align the buttons */
+  }
+
+  .buttons button {
+    margin: 5px 0; /* Adjust the margin for buttons */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack the profile and bio vertically */
+  }
+
+  .contact-info {
+    align-items: center; /* Center align the contact info */
+    margin: 20px 0; /* Add spacing between phone and email */
+  }
+
+  #profile-picture {
+    max-width: 100%; /* Make the profile picture responsive */
+    max-height: auto;
+  }
+
+  .project-title {
+    font-size: 20px; /* Decrease the font size for project titles */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack projects vertically */
+  }
+
+  .cert-title {
+    font-size: 30px; /* Adjust the font size for certificates */
+  }
+
+  .cert-body {
+    margin: 10px 0 0 0; /* Adjust the margin for certificates */
+  }
+
+  .cert-body p {
+    margin: 10px 0; /* Add spacing between certificate paragraphs */
+  }
+}
 
   /* Add specific styles for each section if needed */
 }
