@@ -542,7 +542,11 @@ footer {
   header {
     font-size: 20px; /* Decrease the font size in the header */
   }
+.bio li {
 
+   font-size: 15px;
+   margin: 5px 0; /* Add spacing between paragraphs */
+}
   .intro, .title {
     text-align: center; /* Center the text */
   }
@@ -597,7 +601,7 @@ footer {
   }
 
   .cert-title {
-    font-size: 30px; /* Adjust the font size for certificates */
+    font-size: 20px; /* Adjust the font size for certificates */
   }
 
   .cert-body {
