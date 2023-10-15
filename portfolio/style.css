@@ -538,23 +538,28 @@ footer {
 }
 
 
+/* Add this media query to target screens with a maximum width of 375px (typical for phones) */
 @media screen and (max-width: 375px) {
   html {
     font-size: 50%; /* Adjust the base font size for smaller screens */
   }
-body{
-	font-size:50%;
-}
-	
+
+  body {
+    font-size: 50%;
+  }
+
   header {
     font-size: 20px; /* Decrease the font size in the header */
-	  height: auto;
+    height: auto;
   }
-.bio li {
+	header a{
+		font-size:15px;}
 
-   font-size: 15px;
-   margin: 5px 0; /* Add spacing between paragraphs */
-}
+  .bio li {
+    font-size: 15px; /* Decrease the font size for bio content */
+    margin: 5px 0; /* Add spacing between paragraphs */
+  }
+
   .intro, .title {
     text-align: center; /* Center the text */
   }
@@ -614,16 +619,15 @@ body{
 
   .cert-body {
     margin: 10px 0 0 0; /* Adjust the margin for certificates */
-	  font-size: 15px;
+    font-size: 15px; /* Decrease the font size for certificate content */
   }
 
   .cert-body p {
     margin: 10px 0; /* Add spacing between certificate paragraphs */
   }
-	.home,.skills,.certificates{
-		 background-size: 100%;
-	 background-position: center;
-	}
-	
-}
 
+  .home, .skills, .certificates {
+    background-size: 100%; /* Adjust background size */
+    background-position: center; /* Center the background image */
+  }
+}
