@@ -95,10 +95,8 @@ width: 100%;
 	background-image: url("home.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
-position:relative;
+
 }
-.home .name{
-	z-index: 1;}
 #about{
   height: 100vh;
   background-color: #9d0c0c ;
@@ -138,7 +136,7 @@ position:relative;
     }
     
     .projects-section-header {
-      max-width: 640px;
+     width: 100%;
       margin: 0 auto 6rem auto;
 
       color: whitesmoke;
@@ -157,7 +155,7 @@ position:relative;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       grid-gap: 5rem;
       width: 100%;
-      max-width: 1280px;
+     
       margin: 0 auto;
       margin-bottom: 6rem;
 
@@ -199,7 +197,7 @@ position:relative;
   
   .project-image {
     flex: 1;
-    max-width: 100%;
+   
     width: 100%;
     object-fit: cover;
   }
@@ -354,7 +352,7 @@ font-weight: bold;
   	  }
   	
  .skills{
- 
+
   height: 100vh;
   background-image: url("skill.jpeg");
   background-repeat: no-repeat;
@@ -375,7 +373,7 @@ font-weight: bold;
 .container{
 
     position: relative;
-    max-width: 700px;
+    max-width: 100%;
     width: 100%;
     background: #9d0c0c;
     margin: 0 15px;
@@ -545,102 +543,217 @@ footer {
   font-weight: bolder;
 }
 
-
-/* Add this media query to target screens with a maximum width of 375px (typical for phones) */
-@media screen and (max-width: 375px) {
-  html {
-    font-size: 50%; /* Adjust the base font size for smaller screens */
-  }
-
-  body {
-    font-size: 50%;
-  }
-
-  header {
-    font-size: 12px; /* Decrease the font size in the header */
-    height: auto;
-  }
-	.nav-links a{
-		font-size:12px;
-	 padding: 0 20px;
-	}
-	.first-element{
-  margin-left: 8px;
-}
-
-  .bio li {
-    font-size: 15px; /* Decrease the font size for bio content */
-    margin: 5px 0; /* Add spacing between paragraphs */
-  }
-
-  .intro, .title {
-    text-align: center; /* Center the text */
-  }
-
-  .hello, .skil {
-    font-size: 25px; /* Increase font size */
-  }
-
-  .detailed {
-    margin-left: 0; /* Reset the margin */
-  }
-
-  .contact-links {
-    max-width: 100%; /* Make the links take the full width */
-    margin-left: 0; /* Remove margin on the left */
-    margin-top: 10px; /* Add some space at the top */
-  }
-
-  .contact-details {
-    font-size: 18px; /* Decrease the font size of contact links */
-  }
-
-  .buttons {
-    flex-direction: column; /* Stack the buttons vertically */
-    text-align: center; /* Center-align the buttons */
-  }
-
-  .buttons button {
-    margin: 5px 0; /* Adjust the margin for buttons */
-  }
-
-  .about-content {
-    flex-direction: column; /* Stack the profile and bio vertically */
-  }
-
-  .contact-info {
-    align-items: center; /* Center align the contact info */
-    margin: 10px 0; /* Add spacing between phone and email */
-  }
-
-  #profile-picture {
-    max-width: 100%; /* Make the profile picture responsive */
-    max-height: auto;
-  }
-
-  .project-title {
-    font-size: 20px; /* Decrease the font size for project titles */
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr; /* Stack projects vertically */
+@media (max-width: 1200px) {
+  /* Adjust font size for smaller screens */
+  h2 {
+    font-size: 3.2rem;
   }
 
   .cert-title {
-    font-size: 20px; /* Adjust the font size for certificates */
+    font-size: 2.8rem;
   }
 
-  .cert-body {
-    margin: 10px 0 0 0; /* Adjust the margin for certificates */
-    font-size: 15px; /* Decrease the font size for certificate content */
+  .cert-body li {
+    font-size: 2rem;
   }
 
   .cert-body p {
-    margin: 10px 0; /* Add spacing between certificate paragraphs */
-  }
-
-  .home, .skills, .certificates {
-    background-size: 100%; /* Adjust background size */
-    background-position: center; /* Center the background image */
+    font-size: 1.6rem;
   }
 }
+
+@media (max-width: 768px) {
+  /* Mobile-friendly styles */
+  .row {
+    flex-direction: column;
+  }
+
+  .name,
+  .col-sm-1 {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .hello,
+  .detailed {
+    text-align: center;
+    font-size: 2rem;
+    background
+  }
+
+  .cert-body p {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  font-size: 20px;
+  height: 8vh;
+  line-height: 8vh;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  padding: 0 20px; /* Adjust spacing for smaller screens */
+}
+
+.first-element {
+  margin-left: 10px; /* Adjust margin for smaller screens */
+}
+
+/* Home section styles */
+.home {
+  height: 60vh; /* Adjust the height for smaller screens */
+}
+
+.intro, .title {
+  max-width: 70%;
+  font-size: 1.6rem; /* Adjust font size for smaller screens */
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hello, .skil {
+  margin-top: 20px; /* Adjust margin for smaller screens */
+  font-size: 2rem; /* Adjust font size for smaller screens */
+}
+
+.detailed {
+  margin-top: 10px; /* Adjust margin for smaller screens */
+  margin-left: 0; /* Center text for smaller screens */
+  font-size: 1.2rem; /* Adjust font size for smaller screens */
+}
+
+/* Contact links styles */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -60px; /* Adjust margin for smaller screens */
+}
+
+.contact-details {
+  font-size: 1rem; /* Adjust font size for smaller screens */
+}
+
+/* Buttons styles */
+.buttons {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 10px;
+  font-size: 1rem; /* Adjust font size for smaller screens */
+}
+
+/* About section styles */
+#about {
+  height: 100vh;
+  background-color: #9d0c0c;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-container {
+  width: 70%; /* Adjust width for smaller screens */
+}
+
+#profile-picture {
+  max-width: 200px; /* Adjust max-width for smaller screens */
+  max-height: 200px; /* Adjust max-height for smaller screens */
+}
+
+/* Skills section styles */
+.skills {
+  height: 100vh;
+  background-image: url("skill.jpeg");
+}
+
+/* Skill bars styles */
+.skill-box .title {
+  font-size: 1.4rem; /* Adjust font size for smaller screens */
+}
+
+.skill-bar .skill-per {
+  width: 80%; /* Adjust skill bar width for smaller screens */
+}
+
+.skill-per .tooltip {
+  font-size: 0.8rem; /* Adjust font size for smaller screens */
+}
+
+/* Projects section styles */
+.projects-section {
+  padding: 5rem 1rem; /* Adjust padding for smaller screens */
+}
+
+.projects-section-header {
+  font-size: 2rem; /* Adjust font size for smaller screens */
+}
+
+/* Project tile styles */
+.project-title {
+  font-size: 1.2rem; /* Adjust font size for smaller screens */
+}
+
+/* Certificates section styles */
+.cert-title {
+  font-size: 2rem; /* Adjust font size for smaller screens */
+}
+
+.cert-body {
+  font-size: 1rem; /* Adjust font size for smaller screens */
+  margin: 10px 0 0;
+}
+
+.cert-body p {
+  margin-top: 5px; /* Adjust margin for smaller screens */
+  margin-left: 0;
+}
+
+/* Footer styles */
+footer {
+  height: 150px;
+}
+
+.footer-details {
+  font-size: 1rem; /* Adjust font size for smaller screens */
+}
+
+.social-links a {
+  margin-top: 10px;
+}
+
+.download button {
+  font-size: 1rem; /* Adjust font size for smaller screens */
+}
+}
+
+/* Additional media queries and responsive styling can be added as needed */
+
