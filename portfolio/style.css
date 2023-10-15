@@ -62,22 +62,30 @@ html,body{
 header{
 	font-size: 25px;
 	font-family: 'Oswald', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 	height: 10vh;
 	background-color: #9d0c0c;
   line-height: 10vh;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.row{
+.nav-bar{
 	display: flex;
 	align-items: center;
+  justify-content: space-between;
+width: 100%;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
 }
 
-.name{
-	color: ghostwhite;
-	margin-left: 15px;
+.nav-links a {
+  padding: 0 50px; /* Add spacing between navigation links */
+}
+.first-element{
+  margin-left: 20px;
 }
 .cert{
   margin-right: 10px;
