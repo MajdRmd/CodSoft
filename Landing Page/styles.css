@@ -44,25 +44,26 @@ nav {
     align-items: center;
     background-color: #42164e;
     color: wheat;
-flex-direction: column;
+    flex-direction: row;
 }
 
 .text {
     width: 100%;
     padding: 20px;
-
 }
-.text p{
+
+.text p {
     font-size: 25px;
-     background: -webkit-linear-gradient(#D7E1EC, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#D7E1EC, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-}
 .image {
-    width: 100%%;
-padding: 20px;
+    width: 100%;
+    padding: 20px;
 }
+
 @media screen and (min-width: 769px) {
     .digital-marketing {
         flex-direction: row; /* Changes the flex direction to row on screens larger than 768 pixels */
@@ -73,20 +74,19 @@ padding: 20px;
     }
 
     .image {
-        width: 60%; /* Adjusts the width back to 60% on screens larger than 768 pixels */
+        width: 50%; /* Adjusts the width back to 60% on screens larger than 768 pixels */
         padding: 0; /* Removes padding */
     }
 }
-
 
 .image img {
     max-width: 100%;
     height: auto;
 }
+
 .buttons {
     text-align: center;
-font-size: 1.1rem;
-
+    font-size: 1.1rem;
 }
 
 .btn {
@@ -101,7 +101,7 @@ font-size: 1.1rem;
 
 .primary {
     background: linear-gradient(90deg, #8e44ad, #9b59b6); /* Gradient background with purple tones for the primary button */
- margin-right: 20px;
+    margin-right: 20px;
 }
 
 .secondary {
