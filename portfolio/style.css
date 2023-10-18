@@ -19,10 +19,6 @@
  html {
     box-sizing: border-box;
   
-    /* Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-    */
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
@@ -41,7 +37,7 @@
     }
   }
   
-  /* 460px / 16px = 28.75em */
+
   @media (max-width: 28.75em) {
     html {
       font-size: 55%;
@@ -82,7 +78,7 @@ width: 100%;
 }
 
 .nav-links a {
-  padding: 0 50px; /* Add spacing between navigation links */
+  padding: 0 50px;
 }
 .first-element{
   margin-left: 20px;
@@ -113,16 +109,16 @@ width: 100%;
 }
 
 #skills{
-  width: 1000px; /* Set the desired width */
-  height: 180px; /* Set the desired height */
-  display: block; /* Make sure it's a block-level element */
-  margin: 120px auto; /* Center the photo horizontally with some spacing */
+  width: 1000px;
+  height: 180px; 
+  display: block;
+  margin: 120px auto;
   position: absolute;
   
-  left: 50%; /* Position it horizontally at 50% from the left */
-  transform: translate(-50%, -50%); /* Center it precisely */
+  left: 50%; 
+  transform: translate(-50%, -50%); 
    background: transparent;
-  z-index: 1; /* Place it above other content */
+  z-index: 1; 
   
   opacity: 90%;
  
@@ -154,7 +150,7 @@ width: 100%;
       }
     }
     
-    /* "Automagic" image grid using no media queries */
+   
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -184,9 +180,9 @@ width: 100%;
     border-radius: 2px;
      display: flex;
   flex-direction: column;
-  height: 100%; /* Set a fixed height for each project */
-  text-align: center; /* Center the text within the project container */
-  overflow: hidden; /* Hide any overflowing content */
+  height: 100%; 
+  text-align: center;
+  overflow: hidden; 
   }
   
   .code {
@@ -225,13 +221,13 @@ width: 100%;
 
 
 
-/* Style the container for the profile picture and text content */
+
 .about-content {
    display: flex;
    align-items: center;
    justify-content: space-between;
    font-size: 20px;
-   padding: 20px; /* Adjust as needed to create space between the picture and text */
+   padding: 20px; 
 }
 .contact-info {
    display: flex;
@@ -239,35 +235,35 @@ width: 100%;
    align-items: center;
    text-align: center;
    color: #ffffff;
-   margin: 0 20px; /* Adjust the margin as needed */
+   margin: 0 20px;
 }
 
 .contact-info p {
-   font-size: 20px; /* Adjust the font size as needed */
-   margin: 10px 0; /* Add spacing between phone and email */
+   font-size: 20px;
+   margin: 10px 0;
 
 }
 
 
 .profile-container {
-   width: 40%; /* Adjust the width as needed */
+   width: 40%;
  display: flex;
    flex-direction: column;
-   align-items: center; /* Center horizontally */
+   align-items: center;
 }
 
 #profile-picture {
    border-radius: 50%;
-   width: 100%; /* Make the picture fill the container */
+   width: 100%;
    height: 100%;
-   max-width: 250px; /* Set the maximum width as needed */
+   max-width: 250px; 
    max-height: 250px;
    object-fit: cover;
   
 }
 
 .bio {
-   width: 100%; /* Adjust the width as needed */
+   width: 100%;
    margin-top: 30px;
 }
 
@@ -280,11 +276,11 @@ width: 100%;
 .bio li {
 
    font-size: 30px;
-   margin: 20px 0; /* Add spacing between paragraphs */
+   margin: 20px 0;
 }
 .divider{
    border: 1px solid;
-   margin: 5px 0; /* Add spacing above and below the line */
+   margin: 5px 0;
 }
 
 
@@ -294,7 +290,7 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90%; /* Ensure the section takes up the full height of its container */
+  height: 90%;
 }
 
 .hello,.skil{
@@ -552,7 +548,7 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  /* Adjust font size for smaller screens */
+  
   h2 {
     font-size: 3.2rem;
   }
@@ -625,49 +621,49 @@ header {
 }
 
 .nav-links a {
-  padding: 0 20px; /* Adjust spacing for smaller screens */
+  padding: 0 20px;  
 }
 
 .first-element {
-  margin-left: 10px; /* Adjust margin for smaller screens */
+  margin-left: 10px;
 }
 
-/* Home section styles */
+
 .home {
-  height: 60vh; /* Adjust the height for smaller screens */
+  height: 60vh;
 }
 
 .intro, .title {
   max-width: 70%;
-  font-size: 1.6rem; /* Adjust font size for smaller screens */
+  font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
 }
 
 .hello, .skil {
-  margin-top: 20px; /* Adjust margin for smaller screens */
-  font-size: 2rem; /* Adjust font size for smaller screens */
+  margin-top: 20px; 
+  font-size: 2rem; 
 }
 
 .detailed {
-  margin-top: 10px; /* Adjust margin for smaller screens */
-  margin-left: 0; /* Center text for smaller screens */
-  font-size: 1.2rem; /* Adjust font size for smaller screens */
+  margin-top: 10px; 
+  margin-left: 0; 
+  font-size: 1.2rem;
 }
 
-/* Contact links styles */
+
 .contact-links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: -60px; /* Adjust margin for smaller screens */
+  margin-top: -60px;
 }
 
 .contact-details {
-  font-size: 1rem; /* Adjust font size for smaller screens */
+  font-size: 1rem; 
 }
 
-/* Buttons styles */
+
 .buttons {
   max-width: 80%;
   display: flex;
@@ -676,10 +672,10 @@ header {
 
 .buttons button {
   margin: 10px;
-  font-size: 1rem; /* Adjust font size for smaller screens */
+  font-size: 1rem; 
 }
 
-/* About section styles */
+
 #about {
   height: 100vh;
   background-color: #9d0c0c;
@@ -689,70 +685,70 @@ header {
 }
 
 .profile-container {
-  width: 70%; /* Adjust width for smaller screens */
+  width: 70%; 
 }
 
 #profile-picture {
-  max-width: 200px; /* Adjust max-width for smaller screens */
-  max-height: 200px; /* Adjust max-height for smaller screens */
+  max-width: 200px; 
+  max-height: 200px;
 }
 
-/* Skills section styles */
+
 .skills {
   height: 100vh;
   background-image: url("skill.jpeg");
 
 }
 
-/* Skill bars styles */
+
 .skill-box .title {
-  font-size: 1.4rem; /* Adjust font size for smaller screens */
+  font-size: 1.4rem;
 }
 
 .skill-bar .skill-per {
-  width: 80%; /* Adjust skill bar width for smaller screens */
+  width: 80%; 
 }
 
 .skill-per .tooltip {
-  font-size: 0.8rem; /* Adjust font size for smaller screens */
+  font-size: 0.8rem;
 }
 
-/* Projects section styles */
+
 .projects-section {
-  padding: 5rem 1rem; /* Adjust padding for smaller screens */
+  padding: 5rem 1rem;
 }
 
 .projects-section-header {
-  font-size: 2rem; /* Adjust font size for smaller screens */
+  font-size: 2rem;
 }
 
-/* Project tile styles */
+
 .project-title {
-  font-size: 1.2rem; /* Adjust font size for smaller screens */
+  font-size: 1.2rem;
 }
 
-/* Certificates section styles */
+
 .cert-title {
-  font-size: 2rem; /* Adjust font size for smaller screens */
+  font-size: 2rem;
 }
 
 .cert-body {
-  font-size: 1rem; /* Adjust font size for smaller screens */
+  font-size: 1rem;
   margin: 10px 0 0;
 }
 
 .cert-body p {
-  margin-top: 5px; /* Adjust margin for smaller screens */
+  margin-top: 5px;
   margin-left: 0;
 }
 
-/* Footer styles */
+
 footer {
   height: 150px;
 }
 
 .footer-details {
-  font-size: 1rem; /* Adjust font size for smaller screens */
+  font-size: 1rem;
 }
 
 .social-links a {
@@ -760,9 +756,7 @@ footer {
 }
 
 .download button {
-  font-size: 1rem; /* Adjust font size for smaller screens */
+  font-size: 1rem;
 }
 }
-
-/* Additional media queries and responsive styling can be added as needed */
 
