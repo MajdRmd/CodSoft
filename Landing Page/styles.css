@@ -270,6 +270,8 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     }
 }
 /* Media Query for Mobile */
+
+/* Media Query for Mobile */
 @media (max-width: 768px) {
     .digital-marketing {
         flex-direction: column-reverse; /* Reversed order to place image on the right */
@@ -304,12 +306,19 @@ background: linear-gradient(90deg, #42164e,#0f0553);
         margin: 10px 5px;
     }
 
-    .primary, .secondary {
-        width: 25px;
-       font-size:0.8rem;
+    .primary {
+        width: auto; /* Remove the width setting to make the button size dynamic */
+        font-size: 0.8rem;
+        margin: 10px 0;
+    }
+
+    .secondary {
+        width: auto; /* Make the second button full width */
+        font-size: 0.8rem;
         margin: 10px 0;
     }
 }
+
 
 /* Styling for the Services Section */
 /* ... (Your existing styles) ... */
