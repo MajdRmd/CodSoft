@@ -259,7 +259,13 @@ background: linear-gradient(90deg, #42164e,#0f0553);
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 768px) {
-   
+   header {
+   height:100px;
+      background: linear-gradient(90deg, #0f0553,#42164e);
+    
+    color: #fff;
+     font-family: 'Oswald', sans-serif;
+}
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -273,6 +279,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     .nav-links li {
         display: block;
         margin: 10px;
+       font-size: 15px;
     }
 }
 /* Styling for the digital marketing section */
