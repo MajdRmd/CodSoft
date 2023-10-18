@@ -260,11 +260,13 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: row; /* Maintain horizontal layout */
-        justify-content: space-around; /* Adjust spacing for navigation links */
-        font-size: 20px; /* Adjust font size for navigation links */
-        text-align: center; /* Center-align navigation links */
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        margin: 0 10px;
     }
 }
 /* Media Query for Mobile */
