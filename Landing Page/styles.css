@@ -298,22 +298,24 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     }
 
     .buttons {
+       width: 120px !important;
         text-align: center;
     }
 
     .btn {
+       width: 120px !important;
         display: inline-block;
         margin: 10px 5px;
     }
 
     .primary {
-        width: 120px; /* Remove the width setting to make the button size dynamic */
+        width: 120px !important; /* Remove the width setting to make the button size dynamic */
         font-size: 0.8rem;
         margin: 10px 0;
     }
 
     .secondary {
-        width: 120px; /* Make the second button full width */
+        width: 120px !important; /* Make the second button full width */
         font-size: 0.8rem;
         margin: 10px 0;
     }
@@ -344,7 +346,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     }
 
     .btn.primary, .btn.primary:hover {
-        width: 120px;
+        width: 120px !important;
         margin: 10px 0;
     }
 }
