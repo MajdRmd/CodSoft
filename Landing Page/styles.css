@@ -1,0 +1,413 @@
+/* Styling for the digital marketing section */
+header {
+   
+      background: linear-gradient(90deg, #0f0553,#42164e);
+    
+    color: #fff;
+     font-family: 'Oswald', sans-serif;
+}
+body{
+     font-family: 'Oswald', sans-serif;
+     margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+nav {
+
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+      background: -webkit-linear-gradient(#D7E1EC, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+   
+    font-weight: bold;
+}
+
+.digital-marketing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #42164e;
+    color: wheat;
+
+}
+
+.text {
+    width: 40%;
+    padding: 20px;
+
+}
+.text p{
+    font-size: 25px;
+     background: -webkit-linear-gradient(#D7E1EC, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.image {
+    width: 100%%;
+
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+.buttons {
+    text-align: center;
+font-size: 1.1rem;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.primary {
+    background: linear-gradient(90deg, #8e44ad, #9b59b6); /* Gradient background with purple tones for the primary button */
+ margin-right: 20px;
+}
+
+.secondary {
+    background: #3498db; /* Background color with a related blue for the secondary button */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background: linear-gradient(90deg, #9b59b6, #8e44ad); /* Gradient change on hover for primary button */
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Styling for the Services Section */
+.services {
+background: linear-gradient(90deg, #42164e,#0f0553);
+    color: #fff;
+  padding: 10px 0; /* Adjust the top and bottom padding to reduce the height */
+    text-align: center;
+
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    text-align: center;
+    width: 30%; /* Adjust card width based on your design preference */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+     background: -webkit-linear-gradient(#D7E1EC, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+     background: -webkit-linear-gradient(#D7E1EC, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn.primary {
+    background: #3498db; /* Blue color for primary button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn.primary:hover {
+    background: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Styling for the Features Section */
+.features {
+  
+  
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.features .feature {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.features .feature img {
+    max-width: 100px;
+}
+
+.features h2 {
+    background: -webkit-linear-gradient(#7F8C8D , #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.features p {
+
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+/* Styling for the About Us Section */
+.about-us {
+    background: linear-gradient(90deg, #713ABE, #8ECDDD); /* Gradient background with blue tones */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}   
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-us-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-us h2 {
+  background: -webkit-linear-gradient(#E1DADA, #BDCAD9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-us h2::after {
+    content: '';
+    display: block;
+    width: 100px; /* Adjust the width as needed */
+    border-bottom: 3px solid #fff; /* Border style and color */
+    position: absolute;
+    bottom: -10px; /* Adjust the position as needed */
+    left: 0;
+}
+
+
+.about-us-text p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    background: -webkit-linear-gradient(#E1DADA, #BDCAD9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+    }
+    .nav-links li {
+        display: block;
+        margin: 10px;
+    }
+}
+/* Styling for the digital marketing section */
+/* ... (Your existing styles) ... */
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .digital-marketing {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 10px 5px;
+    }
+
+    .primary, .secondary {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Styling for the Services Section */
+/* ... (Your existing styles) ... */
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .service-card img {
+        max-width: 80px;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+    }
+
+    .btn.primary, .btn.primary:hover {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Styling for the Features Section */
+/* ... (Your existing styles) ... */
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .feature {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .feature img {
+        max-width: 60px;
+    }
+
+    .features h2 {
+        font-size: 1.5rem;
+    }
+
+    .features p {
+        font-size: 1rem;
+    }
+}
+
+/* Styling for the About Us Section */
+/* ... (Your existing styles) ... */
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column-reverse;
+    }
+
+    .about-us-image {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .about-us-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-us-text {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .about-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-us-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Query for Navigation (as provided previously) */
+/* ... (Your existing media query for navigation) ... */
+
+
