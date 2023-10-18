@@ -281,6 +281,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 /* ... (Your existing styles) ... */
 
 /* Media Query for Mobile */
+/* Media Query for Mobile */
 @media (max-width: 768px) {
     .digital-marketing {
         flex-direction: column;
@@ -298,6 +299,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 
     .image {
         width: 100%;
+        text-align: center; /* Center the image */
     }
 
     .image img {
@@ -307,6 +309,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 
     .buttons {
         text-align: center;
+       font-size:0.7rem;
     }
 
     .btn {
