@@ -316,6 +316,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 
     .primary, .secondary {
         width: 25px;
+       font-size:0.8rem;
         margin: 10px 0;
     }
 }
