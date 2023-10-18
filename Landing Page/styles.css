@@ -258,34 +258,8 @@ background: linear-gradient(90deg, #42164e,#0f0553);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 768px) {
-   header {
-   height:100px;
-      background: linear-gradient(90deg, #0f0553,#42164e);
-    
-    color: #fff;
-     font-family: 'Oswald', sans-serif;
-}
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.9);
-        position: absolute;
-        top: 60px;
-        right: 0;
-        left: 0;
-    }
-    .nav-links li {
-        display: block;
-        margin: 10px;
-       font-size: 15px;
-    }
-}
-/* Styling for the digital marketing section */
-/* ... (Your existing styles) ... */
 
-/* Media Query for Mobile */
+
 /* Media Query for Mobile */
 @media (max-width: 768px) {
     .digital-marketing {
