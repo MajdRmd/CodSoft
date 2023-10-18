@@ -1,4 +1,3 @@
-/* Styling for the digital marketing section */
 header {
    
       background: linear-gradient(90deg, #0f0553,#42164e);
@@ -8,8 +7,8 @@ header {
 }
 body{
      font-family: 'Oswald', sans-serif;
-     margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+     margin: 0; 
+    padding: 0; 
 }
 nav {
 
@@ -85,17 +84,17 @@ font-size: 1.1rem;
 }
 
 .primary {
-    background: linear-gradient(90deg, #8e44ad, #9b59b6); /* Gradient background with purple tones for the primary button */
+    background: linear-gradient(90deg, #8e44ad, #9b59b6); 
  margin-right: 20px;
 }
 
 .secondary {
-    background: #3498db; /* Background color with a related blue for the secondary button */
+    background: #3498db; 
 }
 
 /* Hover effect for buttons */
 .btn:hover {
-    background: linear-gradient(90deg, #9b59b6, #8e44ad); /* Gradient change on hover for primary button */
+    background: linear-gradient(90deg, #9b59b6, #8e44ad); 
     transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -118,12 +117,12 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 
 .service-card {
     text-align: center;
-    width: 30%; /* Adjust card width based on your design preference */
+    width: 30%; 
     margin: 20px;
     padding: 20px;
     border: 1px solid #fff;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.1); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -150,7 +149,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 }
 
 .btn.primary {
-    background: #3498db; /* Blue color for primary button */
+    background: #3498db;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -161,7 +160,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 }
 
 .btn.primary:hover {
-    background: #2980b9; /* Darker blue on hover */
+    background: #2980b9; 
     transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -200,7 +199,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 }
 /* Styling for the About Us Section */
 .about-us {
-    background: linear-gradient(90deg, #713ABE, #8ECDDD); /* Gradient background with blue tones */
+    background: linear-gradient(90deg, #713ABE, #8ECDDD); 
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -243,10 +242,10 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 .about-us h2::after {
     content: '';
     display: block;
-    width: 100px; /* Adjust the width as needed */
-    border-bottom: 3px solid #fff; /* Border style and color */
+    width: 100px; 
+    border-bottom: 3px solid #fff; 
     position: absolute;
-    bottom: -10px; /* Adjust the position as needed */
+    bottom: -10px; 
     left: 0;
 }
 
@@ -269,7 +268,6 @@ background: linear-gradient(90deg, #42164e,#0f0553);
         margin: 0 10px;
     }
 }
-/* Media Query for Mobile */
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
@@ -289,12 +287,12 @@ background: linear-gradient(90deg, #42164e,#0f0553);
 
     .image {
         width: 100%;
-        height: 200px; /* Set a fixed height for the image */
+        height: 200px;
     }
 
     .image img {
         max-width: 100%;
-        height: 100%; /* Fill the entire height of the image container */
+        height: 100%; 
     }
 
     .buttons {
@@ -309,23 +307,22 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     }
 
     .primary {
-        width: 120px !important; /* Remove the width setting to make the button size dynamic */
+        width: 120px !important; 
         font-size: 0.8rem;
         margin: 10px 0;
     }
 
     .secondary {
-        width: 120px !important; /* Make the second button full width */
+        width: 120px !important; 
         font-size: 0.8rem;
         margin: 10px 0;
     }
 }
 
 
-/* Styling for the Services Section */
-/* ... (Your existing styles) ... */
 
-/* Media Query for Mobile */
+
+
 @media (max-width: 768px) {
     .service-card {
         width: 90%;
@@ -351,10 +348,6 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     }
 }
 
-/* Styling for the Features Section */
-/* ... (Your existing styles) ... */
-
-/* Media Query for Mobile */
 @media (max-width: 768px) {
     .feature {
         max-width: 100%;
@@ -374,10 +367,7 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     }
 }
 
-/* Styling for the About Us Section */
-/* ... (Your existing styles) ... */
 
-/* Media Query for Mobile */
 @media (max-width: 768px) {
     .about-us-content {
         flex-direction: column-reverse;
@@ -409,5 +399,3 @@ background: linear-gradient(90deg, #42164e,#0f0553);
     }
 }
 
-/* Media Query for Navigation (as provided previously) */
-/* ... (Your existing media query for navigation) ... */
