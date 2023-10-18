@@ -44,11 +44,11 @@ nav {
     align-items: center;
     background-color: #42164e;
     color: wheat;
-
+flex-direction: column;
 }
 
 .text {
-    width: 40%;
+    width: 100%;
     padding: 20px;
 
 }
@@ -61,8 +61,23 @@ nav {
 }
 .image {
     width: 100%%;
-
+padding: 20px;
 }
+@media screen and (min-width: 769px) {
+    .digital-marketing {
+        flex-direction: row; /* Changes the flex direction to row on screens larger than 768 pixels */
+    }
+
+    .text {
+        width: 50%; /* Adjusts the width back to 40% on screens larger than 768 pixels */
+    }
+
+    .image {
+        width: 60%; /* Adjusts the width back to 60% on screens larger than 768 pixels */
+        padding: 0; /* Removes padding */
+    }
+}
+
 
 .image img {
     max-width: 100%;
