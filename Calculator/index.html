@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="calculator-container">
+    <div class="calculator">
+        <div class="output" id="display">0</div>
+        <div class="buttons">
+            <div class="grid-container">
+                <div class="grid-item one"><button onclick="appendToDisplay('1')">1</button></div>
+                <div class="grid-item two"><button onclick="appendToDisplay('2')">2</button></div>
+                <div class="grid-item three"><button onclick="appendToDisplay('3')">3</button></div>
+                <div class="grid-item four"><button onclick="appendToDisplay('4')">4</button></div>
+                <div class="grid-item five"><button onclick="appendToDisplay('5')">5</button></div>
+                <div class="grid-item six"><button onclick="appendToDisplay('6')">6</button></div>
+                <div class="grid-item seven"><button onclick="appendToDisplay('7')">7</button></div>
+                <div class="grid-item eight"><button onclick="appendToDisplay('8')">8</button></div>
+                <div class="grid-item nine"><button onclick="appendToDisplay('9')">9</button></div>
+
+                <div class="grid-item plus"><button onclick="performOperation('+')">+</button></div>
+                <div class="grid-item minus"><button onclick="performOperation('-')">-</button></div>
+                <div class="grid-item equal"><button onclick="calculateResult()">=</button></div>
+                  <div class="grid-item clear"><button onclick="clearDisplay()">C</button></div> 
+                    <div class="grid-item zero"><button onclick="appendToDisplay('0')">0</button></div>
+                  <div class="grid-item divide"><button onclick="performOperation('÷')">÷</button></div> 
+                  <div class="grid-item multiply"><button onclick="performOperation('*')">x</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
